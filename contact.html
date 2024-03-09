@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Fables">
+    <meta name="author" content="Enterprise Development">
+    <link rel="shortcut icon" href="assets/custom/images/elp1.png">
+    <title> ELP GREEN TECHNOLOGY</title>
+    <!-- animate.css-->  
+    <link href="assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
+    <!-- Load Screen -->
+    <link href="assets/vendor/loadscreen/css/spinkit.css" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <!-- Font Awesome 5 -->
+    <link href="assets/vendor/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- Fables Icons -->
+    <link href="assets/custom/css/fables-icons.css" rel="stylesheet"> 
+    <!-- Bootstrap CSS --> 
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap-4-navbar.css" rel="stylesheet">
+    <!-- portfolio filter gallery -->
+    <link href="assets/vendor/portfolio-filter-gallery/portfolio-filter-gallery.css" rel="stylesheet">
+    <!-- Video Background -->
+    <link href="assets/vendor/video-background/video-background.css" rel="stylesheet"> 
+    <!-- FANCY BOX -->
+    <link href="assets/vendor/fancybox-master/jquery.fancybox.min.css" rel="stylesheet"> 
+    <!-- RANGE SLIDER -->
+    <link href="assets/vendor/range-slider/range-slider.css" rel="stylesheet">
+    <!-- OWL CAROUSEL  --> 
+    <link href="assets/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS FILE -->
+    <link href="assets/custom/css/custom.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
+    <link href="assets/custom/css/custom-responsive.css" rel="stylesheet">
+  <style>
+    #footer {
+        background-color: rgb(12, 18, 49);
+        color: white;
+    }
+  </style>
+      <style>
+        /* Estilos PRODUTOS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    
+        /* Estilos da tabela */
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+    
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+    
+        th {
+            background-color: #333;
+            color: white;
+        }
+    
+        /* Estilos da galeria */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+    
+        .gallery-item {
+            width: calc(25% - 20px);
+            margin: 10px;
+            text-align: center;
+        }
+    
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+    
+        .gallery-item p {
+            margin-top: 5px;
+        }
+    
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: calc(50% - 20px);
+            }
+        }
+    
+        /* Estilos adicionais */
+        .advantages {
+            margin-bottom: 20px;
+        }
+    </style>
+    
+    <style>
+        /* Estilos do contêiner de vídeo */
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* Proporção de aspecto 16:9 */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    
+    <style>
+        /* Estilos do menu suspenso */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            padding: 10px;
+        }
+    
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+    
+    </head>
+
+
+    <body>
+    
+    <div class="search-section">
+        <a class="close-search" href="#"></a>
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <form method="post" action="#" class="w-50">
+                <div class="row">
+                    <div class="col-10">
+                        <input type="search" value="" class="form-control palce bg-transparent border-0 search-input" placeholder="Search Here ..." /> 
+                    </div>
+                    <div class="col-2 mt-3">
+                         <button type="submit" class="btn bg-transparent text-white"> <i class="fas fa-search"></i> </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div> 
+    <div id="ju-loading-screen">
+        <div class="sk-double-bounce">
+          <div class="sk-child sk-double-bounce1"></div>
+          <div class="sk-child sk-double-bounce2"></div>
+        </div>
+      </div>
+      <div class="fables-forth-background-color fables-top-header-signin">
+    <div class="container">
+        <div class="row" id="top-row">
+            <div class="col-12 col-sm-2 col-lg-5">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle border-0 bg-transparent font-13 lang-dropdown-btn pl-0" type="button" id="dropdownLangButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language
+                    </button>
+                    <div class="dropdown-menu p-0 fables-forth-background-color rounded-0 m-0 border-0 lang-dropdown" aria-labelledby="dropdownLangButton">
+                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="#" onclick="setLanguage('en')">
+                            <img src="assets/custom/images/england.png" alt="england flag" class="mr-1"> English</a>
+                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="#" onclick="setLanguage('es')">
+                            <img src="assets/custom/images/espanha.png" alt="spain flag" class="mr-1"> Spanish</a>
+                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="#" onclick="setLanguage('it')">
+                            <img src="assets/custom/images/italy.png" alt="italy flag" class="mr-1"> Italian</a>
+                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="#" onclick="setLanguage('pt')">
+                            <img src="assets/custom/images/brasil.png" alt="portugal flag" class="mr-1"> Portuguese</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-5 col-lg-4 text-right">
+                    <p class="fables-third-text-color font-13"><span class="fables-iconphone"></span> Phone : (+39) 350 1021359</p>
+                </div>
+                <div class="col-12 col-sm-5 col-lg-3 text-right">
+                    <p class="fables-third-text-color font-13"><span class="fables-iconemail"></span> Email: sac@elpgreen.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fables-navigation fables-main-background-color py-3 py-lg-0">
+        <div class="container">
+                   <div class="row">
+                       <div class="col-12 col-md-10 col-lg-9 pr-md-0">                       
+                           <nav class="navbar navbar-expand-md btco-hover-menu py-lg-2">
+             
+                                <a class="navbar-brand pl-0" href="index.html"><img src="assets/custom/images/elp1.png" alt="Fables Template" class="fables-logo"></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fablesNavDropdown" aria-controls="fablesNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="fables-iconmenu-icon text-white font-16"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="fablesNavDropdown"> 
+    
+                                    <ul class="navbar-nav mx-auto fables-nav">   
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="sub-nav2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Company
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="sub-nav2">
+                                                <li><a class="dropdown-item" href="certificates.html">Certificates</a></li>
+                                                <li><a class="dropdown-item" href="about.html">About</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- Product Categories -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="sub-nav3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Product
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="sub-nav3">
+                                                <li><a class="dropdown-item" href="produtos aba 2 .html">Recycling Tires Automatic Line</a></li>
+                                                <li><a class="dropdown-item" href="produtos aba 1 .html">Recycling Tires Economical Line</a></li>
+                                                <li><a class="dropdown-item" href="Economical Configuration of Tire Shredding Line.html">Economical Configuration of Tire Shredding Line</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- Parts & Services -->
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="Products & Services.html" id="sub-nav1">Service</a>
+                                        </li>
+            
+                                        <!-- Application -->
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="APPLICATION.html" id="sub-nav1">Application</a>
+                                        </li>
+                                        
+                                        <!-- Contact Us -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="sub-nav4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Contact
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="sub-nav4">
+                                                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                                <li><a class="dropdown-item" href="register.html">Quotation</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-12 col-md-2 col-lg-3 pr-md-0 icons-header-mobile">
+                            <div class="fables-header-icons"> 
+                                
+                                <a href="about.html" class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
+                                    <span class="fab fa-pinterest-square"></span> <!-- Ícone de Usuário -->
+                                </a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqvHRam4zJxtScPlKkeukIKUp1YZWFo-eKgDDjH7U1k_rSKQ/viewform?usp=sf_link" target="_blank" class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
+                                    <span class="fas fa-envelope"></span> <!-- Ícone de E-mail -->
+                                </a>
+                                <a href="https://www.linkedin.com/in/elpgreen/" target="_blank" class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
+                                    <span class="fab fa-linkedin"></span> <!-- Ícone do LinkedIn -->
+                                </a>
+                                <a href="https://wa.me/message/OQTHXVGTISTHD1" target="_blank" class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
+                                    <span class="fab fa-whatsapp"></span> <!-- Ícone de WhatsApp -->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div> 
+</div> 
+
+              
+
+        
+<!-- End Header -->
+
+
+    <!-- Start Breadcrumbs -->
+    <div class="fables-light-gary-background">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="fables-breadcrumb breadcrumb px-0 py-3">
+                    <li class="breadcrumb-item"><a href="home.html" class="fables-second-text-color">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+
+<!-- /End Breadcrumbs -->
+
+<!-- Start page content --> 
+    <div class="container"> 
+        <div class="row my-4 my-md-5 overflow-hidden">
+             <div class="col-12 col-sm-6 col-md-4 text-center mb-4 mb-md-0 wow zoomIn" data-wow-duration="1.5s" data-wow-delay=".4s"> 
+                    <span class="fables-iconmap-icon fa-2x fables-second-background-color text-white rounded-circle d-inline-block p-4"></span> 
+                    <h2 class="font-16 semi-font fables-second-text-color my-3">Address Information</h2>
+                    <p class="font-14 fables-forth-text-color">
+                        Add: 9-2302, Provincial Economic Development Park, Zhangjiagang City, Jiangsu Province, P. R. China</p>        
+                   
+             </div>
+             <div class="col-12 col-sm-6 col-md-4 text-center mb-4 mb-md-0 wow zoomIn" data-wow-duration="1.5s" data-wow-delay=".8s">
+                <span class="fables-iconphone fa-2x  fables-second-background-color text-white rounded-circle d-inline-block p-4"></span>
+                <h2 class="font-16 semi-font fables-second-text-color my-3">Mail & Phone number</h2>
+                <p class="font-14 fables-forth-text-color">euro@elpgreen.com / elpenergia@gmail.com</p>
+                <p class="font-14 fables-forth-text-color">+39 350 102 1359</p>
+            </div>
+           
+            
+             <div class="col-12 col-sm-6 col-md-4 text-center mb-4 mb-md-0 wow zoomIn" data-wow-duration="1.5s" data-wow-delay="1.2s"> 
+                    <span class="fables-iconshare-icon fa-2x fables-second-background-color text-white rounded-circle d-inline-block p-4"></span>
+                    <h2 class="font-16 semi-font fables-second-text-color my-3">Stay In Touch</h2>
+                    <ul class="nav fables-contact-social-links"> 
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook-f fables-forth-text-color fa-fw"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram fables-forth-text-color  fa-fw"></i></a></li> 
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter fables-forth-text-color    fa-fw"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-linkedin fables-forth-text-color   fa-fw"></i></a></li>
+                    </ul> 
+                    <div>
+             </div>
+        </div>  
+    </div>
+</div>
+
+    <div class="fables-contact-caption fables-after-overlay px-2 px-sm-5 text-left text-sm-center py-5 bg-rules">
+           <div class="container">
+               <div class="row">
+                   <div class="col-12 col-lg-8 offset-lg-2"> 
+                       <h3 class="font-25 font-weight-bold white-color position-relative z-index">We are the best business consulting company ever!!</h3>  
+                       <p class="font-weight-light fables-third-text-color my-3 position-relative z-index">Have questions? Need assistance? We're here to help! Reach out to us using the form below or via email, and our dedicated team will promptly respond to your inquiries. <br>Whether you're interested in our products, services, or partnership opportunities, we value your feedback and are committed to providing you with the support you need. <br><strong>Thank you for choosing</strong></p>
+                       <a href="#" class="btn fables-second-background-color fables-rounded-btn white-color fables-btn-rounded font-19 px-5 mt-2 position-relative z-index">know more</a> 
+                   </div>
+                    
+               </div>
+               
+           </div>
+    </div> 
+    <div class="container">
+        <div class="row my-4 my-md-5">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center"> <!-- Adicionando a classe text-center para centralizar o conteúdo -->
+                <h3 class="font-35 font-weight-bold fables-second-text-color mb-3">Contact Us</h3>
+                <p class="fables-forth-text-color">"We appreciate your interest in <strong>ELP GREEN TECHNOLOGY</strong>. Kindly fill out the form below with your inquiry or feedback, and we'll get back to you as soon as possible. Thank you for reaching out"</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container d-flex justify-content-center my-5"> <!-- Adicionando a classe d-flex para flexbox e justify-content-center para centralizar horizontalmente -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeo8Rs-JH5Et8QOz49ZVhogUfe2-JePNtLb3rVSPlp-LxBWHA/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Caricamento…</iframe>
+    </div>
+    
+    <h3 class="fables-second-text-color font-35 font-weight-bold text-center my-5">Our Location</h3> <!-- Adicionando classe text-center para centralizar o título -->
+    
+    <div class="container d-flex justify-content-center"> <!-- Adicionando a classe d-flex para flexbox e justify-content-center para centralizar horizontalmente -->
+        <img src="assets/custom/images/Captura de tela .png" alt="" class="img-fluid image-clickable" onclick="expandImage(this)"> <!-- Removendo a segunda declaração da classe para img-fluid -->
+    </div>
+</div>
+. <br>
+</div>
+    
+    
+ 
+<!-- /End page content -->
+<div class="fables-footer-image fables-after-overlay white-color py-4 py-lg-5 bg-rules" >
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 mt-2 mb-5 text-center" style="color: #f1f1f3;">
+                <h2 class="font-30 semi-font mb-5">Welcome to <strong style="color: #9fa0a1;">ELP Green Technology </strong>ELP Green Technology and <strong style="color: #9fa0a1;">Tops Recycling! </strong></h2>
+                
+                <form class="form-inline position-relative"> 
+                  <div class="form-group fables-subscribe-formgroup"> 
+                    <input type="email" class="form-control fables-subscribe-input fables-btn-rouned" placeholder="Your Email">
+                  </div>
+                  <button type="submit" class="btn fables-second-background-color fables-btn-rouned fables-subscribe-btn"><strong style="color: #f1f1f3;">Subscribe</strong></button>
+                </form>
+                
+            </div>
+            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                <a href="index.html" class="fables-second-border-color border-bottom pb-3 d-block mb-3 mt-minus-13"><img src="assets/custom/images/elp1.png" alt="fables template"></a>
+                <p class="font-15 fables-third-text-color"style="color: #fff">
+                    Our commitment goes beyond providing quality equipment. We are here to ensure that your journey with us is one of continuous success. From installation and training to technical support and warranty coverage, we are dedicated to providing the resources necessary to optimize the performance and longevity of your investment. With ELP Green Technology and Tops Recycling, you're not just acquiring machines, you're gaining a reliable partner committed to your ongoing success.
+                </p> 
+                
+            </div>
+             
+            <div class="col-12 col-sm-6 col-lg-4">
+                <h2 class="font-20 semi-font fables-second-border-color border-bottom pb-3"style="color: #fff">Contact us</h2>
+               <div class="my-3">
+                    <h4 class="font-16 semi-font"><span class="fables-iconmap-icon fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span> Address Information</h4>
+                    <p class="font-14 fables-fifth-text-color mt-2 ml-4"style="color: #fff"> Provincial, Cidade de Zhangjiagang, Província de Jiangsu, PR China </p>
+                </div>
+                <div class="my-3">
+                    <h4 class="font-16 semi-font"><span class="fables-iconphone fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span> Call Now </h4>
+                    <p class="font-14 fables-fifth-text-color mt-2 ml-4"style="color: #fff">(+39)350 1021359 /</p>
+                </div>
+                <div class="my-3">
+                    <h4 class="font-16 semi-font"><span class="fables-iconemail fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span> Mail </h4>
+                    <p class="font-14 fables-fifth-text-color mt-2 ml-4" style="color: #fff">euro@elpgreen.com</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <h2 class="font-20 semi-font fables-second-border-color border-bottom pb-3 mb-3" style="color: #fff;">EXPLORE OUR SITE</h2>
+                <ul class="nav fables-footer-links">
+                    <li><a href="about.html" style="color: #fff;">About Us</a></li>
+                    <li><a href="contactus1.html"style="color: #fff">Contact Us</a></li>
+                    <li><a href="APPLICATION.html"style="color: #fff">Application</a></li>
+                    <li><a href="produtos aba 2 .html"style="color: #fff">Full Automatic plant</a></li>
+                    <li><a href="produtos aba 1 .html"style="color: #fff">Semi-Automatic plant</a></li>
+                    <li><a href="Products & Services.html"style="color: #fff">Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright fables-main-background-color mt-0 border-0 white-color">
+        <ul class="nav fables-footer-social-links just-center fables-light-footer-links">
+            <a href="https://www.youtube.com/@elpgreen" class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
+                <span class="fab fa-pinterest-square"></span> <!-- Ícone de Usuário -->
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqvHRam4zJxtScPlKkeukIKUp1YZWFo-eKgDDjH7U1k_rSKQ/viewform?usp=sf_link" target="_blank" class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
+                <span class="fas fa-envelope"></span> <!-- Ícone de E-mail -->
+            </a>
+            <a href="https://www.linkedin.com/in/elpgreen/" target="_blank" class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
+                <span class="fab fa-linkedin"></span> <!-- Ícone do LinkedIn -->
+            </a>
+            <a href="https://wa.me/message/OQTHXVGTISTHD1" target="_blank" class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
+                <span class="fab fa-whatsapp"></span> <!-- Ícone de WhatsApp -->
+            </a>
+            
+        </ul>
+        <p class="mb-0">Copyright © 2023 ELP Green Technology. All rights reserved.</p> 
+
+</div>
+ <script>
+    function expandImage(image) {
+        // Create overlay element
+        var overlay = document.createElement("div");
+        overlay.className = "overlay";
+        overlay.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+        overlay.style.position = "fixed";
+        overlay.style.top = "0";
+        overlay.style.left = "0";
+        overlay.style.width = "100%";
+        overlay.style.height = "100%";
+        overlay.style.zIndex = "9999";
+        
+        // Create image element inside overlay
+        var img = document.createElement("img");
+        img.src = image.src;
+        img.alt = image.alt;
+        img.style.maxWidth = "100%";
+        img.style.maxHeight = "100%";
+        img.style.position = "absolute";
+        img.style.top = "50%";
+        img.style.left = "50%";
+        img.style.transform = "translate(-50%, -50%)";
+        
+        // Append image to overlay
+        overlay.appendChild(img);
+        
+        // Append overlay to body
+        document.body.appendChild(overlay);
+        
+        // Close overlay when clicked outside  the image
+        overlay.onclick = function() {
+            overlay.remove();
+        };
+    }
+</script>
+ 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Função para filtrar produtos por categoria
+        function filterProducts(category) {
+            const products = document.querySelectorAll('.fables-product-block');
+            products.forEach(product => {
+                if (category === 'all') {
+                    product.style.display = 'block'; // Mostrar todos os produtos se a categoria for 'all'
+                } else {
+                    if (product.classList.contains(category)) {
+                        product.style.display = 'block'; // Mostrar o produto se pertencer à categoria selecionada
+                    } else {
+                        product.style.display = 'none'; // Ocultar o produto se não pertencer à categoria selecionada
+                    }
+                }
+            });
+        }
+
+        // Event listener para cliques nas opções de categoria
+        const categorySelect = document.getElementById('categorySelector');
+        categorySelect.addEventListener('change', function() {
+            const category = this.value; // Obter a categoria selecionada
+            filterProducts(category); // Chamar a função de filtro de produtos
+        });
+
+        // Função para filtrar produtos por termo de pesquisa
+        function searchProducts(searchTerm) {
+            const products = document.querySelectorAll('.fables-product-block');
+            products.forEach(product => {
+                const title = product.querySelector('.card-title').textContent.toLowerCase();
+                if (title.includes(searchTerm.toLowerCase())) {
+                    product.style.display = 'block'; // Mostrar o produto se o título corresponder ao termo de pesquisa
+                } else {
+                    product.style.display = 'none'; // Ocultar o produto se o título não corresponder ao termo de pesquisa
+                }
+            });
+        }
+
+        // Event listener para input de pesquisa
+        const searchInput = document.querySelector('.fables-store-input');
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.trim(); // Obter o termo de pesquisa e remover espaços em branco extras
+            if (searchTerm !== '') {
+                searchProducts(searchTerm); // Chamar a função de pesquisa de produtos
+            } else {
+                filterProducts('all'); // Se o campo de pesquisa estiver vazio, mostrar todos os produtos
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var dropdownItems = document.querySelectorAll('.dropdown-item');
+        dropdownItems.forEach(function(item) {
+            item.addEventListener('open', function(e) {
+                e.preventDefault();
+                var parent = this.parentElement;
+                if (parent.classList.contains('open')) {
+                    parent.classList.remove('open');
+                } else {
+                    parent.classList.add('open');
+                }
+            });
+        });
+    });
+</script>
+<script>
+     $(".player").mb_YTPlayer();
+    
+</script>
+<script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+<script src="assets/vendor/timeline/jquery.timelify.js"></script>
+<script src="assets/vendor/loadscreen/js/ju-loading-screen.js"></script>
+<script src="assets/vendor/jquery-circle-progress/circle-progress.min.js"></script>
+<script src="assets/vendor/popper/popper.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap-4-navbar.js"></script>
+<script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script> 
+<script src="assets/vendor/fancybox-master/jquery.fancybox.min.js"></script>
+<script src="assets/vendor/video-background/jquery.mb.YTPlayer.js"></script>
+<script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
+<script src="assets/custom/js/custom.js"></script>  
+<script>
+     $(".player").mb_YTPlayer();
+    
+</script>
+<script src="assets/vendor/jQuery.countdown-master/jquery.countdown.min.js"></script>
+<script src="assets/custom/js/jquery-data-to.js"></script>   
+<script src="assets/vendor/jquery-circle-progress/circle.js"></script>
+<script src="assets/vendor/portfolio-filter-gallery/jquery.isotope.min.js"></script>
+<script src="assets/vendor/portfolio-filter-gallery/portfolio-filter-gallery.js"></script>
+
+<div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit(langCode) {
+            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: langCode, layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Fables">
+    <meta name="author" content="Enterprise Development">
+    <link rel="shortcut icon" href="assets/custom/images/elp1.png">
+    <title> ELP GREEN TECHNOLOGY</title>
+    <!-- animate.css-->  
+    <link href="assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
+    <!-- Load Screen -->
+    <link href="assets/vendor/loadscreen/css/spinkit.css" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <!-- Font Awesome 5 -->
+    <link href="assets/vendor/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- Fables Icons -->
+    <link href="assets/custom/css/fables-icons.css" rel="stylesheet"> 
+    <!-- Bootstrap CSS --> 
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap-4-navbar.css" rel="stylesheet">
+    <!-- portfolio filter gallery -->
+    <link href="assets/vendor/portfolio-filter-gallery/portfolio-filter-gallery.css" rel="stylesheet">
+    <!-- Video Background -->
+    <link href="assets/vendor/video-background/video-background.css" rel="stylesheet"> 
+    <!-- FANCY BOX -->
+    <link href="assets/vendor/fancybox-master/jquery.fancybox.min.css" rel="stylesheet"> 
+    <!-- RANGE SLIDER -->
+    <link href="assets/vendor/range-slider/range-slider.css" rel="stylesheet">
+    <!-- OWL CAROUSEL  --> 
+    <link href="assets/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS FILE -->
+    <link href="assets/custom/css/custom.css" rel="stylesheet">
+    <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
+    <link href="assets/custom/css/custom-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Inclua o jQuery (necessário para o Bootstrap JavaScript) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Inclua o script do Bootstrap JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    #footer {
+        background-color: rgb(12, 18, 49);
+        color: white;
+    }
+  </style>
+      <style>
+        /* Estilos PRODUTOS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    
+        /* Estilos da tabela */
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+    
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+    
+        th {
+            background-color: #333;
+            color: white;
+        }
+    
+        /* Estilos da galeria */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+    
+        .gallery-item {
+            width: calc(25% - 20px);
+            margin: 10px;
+            text-align: center;
+        }
+    
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+    
+        .gallery-item p {
+            margin-top: 5px;
+        }
+    
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: calc(50% - 20px);
+            }
+        }
+    
+        /* Estilos adicionais */
+        .advantages {
+            margin-bottom: 20px;
+        }
+    </style>
+    
+    <style>
+        /* Estilos do contêiner de vídeo */
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* Proporção de aspecto 16:9 */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    
+    <style>
+        /* Estilos do menu suspenso */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            padding: 10px;
+        }
+    
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+      <style>
+        .navbar-toggler {
+            background-color: #050130; /* Cinza escuro */
+        }
+      </style>
+    </head>
+
+
+    <body>
+    
+    <div class="search-section">
+        <a class="close-search" href="#"></a>
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <form method="post" action="#" class="w-50">
+                <div class="row">
+                    <div class="col-10">
+                        <input type="search" value="" class="form-control palce bg-transparent border-0 search-input" placeholder="Search Here ..." /> 
+                    </div>
+                    <div class="col-2 mt-3">
+                         <button type="submit" class="btn bg-transparent text-white"> <i class="fas fa-search"></i> </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div> 
+    <div id="ju-loading-screen">
+        <div class="sk-double-bounce">
+          <div class="sk-child sk-double-bounce1"></div>
+          <div class="sk-child sk-double-bounce2"></div>
+        </div>
+      </div>
+      <div class="fables-forth-background-color fables-top-header-signin">
+    <div class="container">
+        <div class="row" id="top-row">
+            <div class="col-12 col-sm-2 col-lg-5">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle border-0 bg-transparent font-13 lang-dropdown-btn pl-0" type="button" id="dropdownLangButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language
+                    </button>
+                    <div class="dropdown-menu p-0 fables-forth-background-color rounded-0 m-0 border-0 lang-dropdown" aria-labelledby="dropdownLangButton">
+                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="#" onclick="setLanguage('en')">
+                            <img src="assets/custom/images/england.png" alt="england flag" class="mr-1"> English</a>
+                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="#" onclick="setLanguage('es')">
+                            <img src="assets/custom/images/espanha.png" alt="spain flag" class="mr-1"> Spanish</a>
+                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="#" onclick="setLanguage('it')">
+                            <img src="assets/custom/images/italy.png" alt="italy flag" class="mr-1"> Italian</a>
+                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="#" onclick="setLanguage('pt')">
+                            <img src="assets/custom/images/brasil.png" alt="portugal flag" class="mr-1"> Portuguese</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12 col-sm-5 col-lg-4 text-right">
+                    <p class="fables-third-text-color font-13"><span class="fables-iconphone"></span> Phone : (+39) 350 1021359</p>
+                </div>
+                <div class="col-12 col-sm-5 col-lg-3 text-right">
+                    <p class="fables-third-text-color font-13"><span class="fables-iconemail"></span> Email: sac@elpgreen.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="fables-navigation fables-main-background-color py-3 py-lg-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10 col-lg-9 pr-md-0">                       
+          <nav class="navbar navbar-expand-md btco-hover-menu py-lg-2">
+            <a class="navbar-brand pl-0" href="index.html"><img src="assets/custom/images/elp1.png" alt="Fables Template" class="fables-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fablesNavDropdown" aria-controls="fablesNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fables-iconmenu-icon text-white font-16"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="fablesNavDropdown">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html" id="sub-nav1">Home</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="index.html" id="sub-nav2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Company
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="sub-nav2">
+                                                <li><a class="dropdown-item" href="certificates.html">Certificates</a></li>
+                                                <li><a class="dropdown-item" href="about.html">About</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- Product Categories -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="sub-nav3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Product
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="sub-nav3">
+                                                <li><a class="dropdown-item" href="produtos aba 2 .html">Recycling Tires Automatic Line</a></li>
+                                                <li><a class="dropdown-item" href="produtos aba 1 .html">Recycling Tires Economical Line</a></li>
+                                                <li><a class="dropdown-item" href="Economical Configuration of Tire Shredding Line.html">Economical Configuration of Tire Shredding Line</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- Parts & Services -->
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="Products & Services.html" id="sub-nav1">Service</a>
+                                        </li>
+            
+                                        <!-- Application -->
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="APPLICATION.html" id="sub-nav1">Application</a>
+                                        </li>
+                                        
+                                        <!-- Contact Us -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="sub-nav4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Contact
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="sub-nav4">
+                                                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                                <li><a class="dropdown-item" href="register.html">Quotation</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-12 col-md-2 col-lg-3 pr-md-0 icons-header-mobile">
+                            <div class="fables-header-icons"> 
+                                
+                                <a href="about.html" class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
+                                    <span class="fab fa-pinterest-square"></span> <!-- Ícone de Usuário -->
+                                </a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqvHRam4zJxtScPlKkeukIKUp1YZWFo-eKgDDjH7U1k_rSKQ/viewform?usp=sf_link" target="_blank" class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
+                                    <span class="fas fa-envelope"></span> <!-- Ícone de E-mail -->
+                                </a>
+                                <a href="https://www.linkedin.com/in/elpgreen/" target="_blank" class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
+                                    <span class="fab fa-linkedin"></span> <!-- Ícone do LinkedIn -->
+                                </a>
+                                <a href="https://wa.me/message/OQTHXVGTISTHD1" target="_blank" class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
+                                    <span class="fab fa-whatsapp"></span> <!-- Ícone de WhatsApp -->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div> 
+</div> 
+
+
+<!-- End Header -->
+     
+<!-- Start Breadcrumbs -->
+<div class="fables-light-gary-background">
+    <div class="container"> 
+        <nav aria-label="breadcrumb">
+          <ol class="fables-breadcrumb breadcrumb px-0 py-3">
+            <li class="breadcrumb-item"><a href="Reclaimed Rubber Production Line.html" class="fables-second-text-color">Products</a></li>
+            <li class="breadcrumb-item active" aria-current="page">OTR Tire Disassembly Recycling Machine  </li>
+          </ol>
+        </nav> 
+    </div>
+</div>
+<!-- /End Breadcrumbs -->
+     
+<!-- Start page content -->   
+<div class="container"> 
+     <div class="row my-4 my-md-5">
+          <div class="col-12 col-lg-6">
+                 <div class="fables-single-slider store-single-slider">
+                     <div id="sync1" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/36.jpg" alt="" class="w-100">
+                          </div>
+                          <div class="item">
+                            <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/37.jpg" alt="" class="w-100">
+                          </div>
+                    
+                          <div class="item">
+                            <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/38.jpg" alt="" class="w-100">
+                          </div>
+                          <div class="item">
+                            <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/39.jpg" alt="" class="w-100">
+                          </div>
+                          <div class="item">
+                            <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/40.jpg" alt="" class="w-100">
+                          </div>
+                          <div class="item">
+                            <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/41.jpg" alt="" class="w-100">
+                          </div>
+                          <div class="item">
+                            <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/42.jpg" alt="" class="w-100">
+                          </div>
+                        </div>
+                        <div id="sync2" class="owl-carousel owl-theme">
+                            <div class="item"> 
+                                <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/36.jpg" alt="" class="w-100">
+                          </div>
+                          <div class="item">
+                            <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/37.jpg" alt="" class="w-100">
+                          </div>
+                    
+                          <div class="item">
+                            <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/38.jpg" alt="" class="w-100">
+                          </div>
+                          <div class="item">
+                            <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/39.jpg" alt="" class="w-100">
+                          </div>
+                          <div class="item">
+                            <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/40.jpg" alt="" class="w-100">
+                          </div>
+                          <div class="item">
+                            <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/41.jpg" alt="" class="w-100">
+                          </div>
+                          <div class="item">
+                            <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/42.jpg" alt="" class="w-100">
+                          </div>
+                        </div> 
+                 </div>
+          </div> 
+          <div class="col-12 col-lg-6 col-12 col-lg-6 mt-3 mt-lg-0"><p class="fables-second-text-color font-20 font-weight-bold"><strong>Tyre To Rubber Blocks Cutting</strong></p>
+                <p class="fables-forth-text-color font-15 my-3">
+                    Automatic Waste Tyre To Rubber Blocks Cutting Machine
+          
+              <div class="fables-forth-text-color fables-single-tags mt-3">
+                  <span class="fables-fifth-text-color fables-icontags"></span> 
+                  <a href="#"> Brand:TOPS RECYCLING</a>
+                  <a href="#"> Model: OTR-DB400</a>
+              </div>
+              
+              <p class="fables-forth-text-color font-15 my-3">
+                This OTR tire disassembly machine is used to cut the tire bead or tire side off, or disassemble the tires in lateral direction (along the tire tread), which will make an easier work for crocodile tire sectional cutter machine, and tire shredders (to protect the cutting blades).
+              </p>
+              
+             
+              <div class="row mb-5">
+                  <div class="col-12 col-sm-7 text-center text-md-left"> 
+                      <span class="fables-fifth-text-color"><span class="fables-iconprice"></span> Price :</span> 
+                      <span class="fables-second-text-color font-20 font-weight-bold">contact</span> 
+                  </div>
+                  <div class="col-9 col-md-4 col-lg-5 mt-3 mt-sm-0 mr-auto ml-auto mr-md-0 ml-md-auto">
+                      <div class="fables-calc fables-light-background-color fables-btn-rouned">
+                          <span  class="calc-btn minus fables-forth-text-color float-left calc-width mt-2">-</span> 
+                          <span class="calc-width">
+                              <input type="text" id="input-val" class="form-control d-inline-block border text-center form-circle-input rounded-circle"> 
+                          </span>
+                          <span  class="calc-btn plus fables-forth-text-color float-right calc-width mt-2">+</span>
+                      </div>
+                  </div>
+              </div> 
+            
+              <div class="row mb-5">
+                  <div class="col-6">
+                        <a href="#" class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-14 px-4 py-2 semi-font">
+                        <span class="fables-iconcart"></span> 
+                        <span class="fables-btn-value">ADD TO CART</span></a>
+                  </div>
+                  <div class="row">
+                    <div class="gallery">
+                        <div class="gallery-item">
+                            <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/38.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="gallery-item">
+                          <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/39.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="gallery-item">
+                          <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/40.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="gallery-item">
+                          <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/41.jpg" alt="" class="w-100">
+                        </div>
+                            
+                    </div>
+                  <div class="col-6 col-sm-8 col-lg-7 col-xl-8 text-center mt-0 mt-sm-0 pl-0">
+                    <ul class="nav fables-footer-social-links just-center fables-light-footer-links">
+                      <li><a href="https://wa.me/message/OQTHXVGTISTHD1" target="_blank"><i class="fab fa-google-plus-square"></i></a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=61555831711885" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                      <li><a href="https://www.instagram.com/elpgreen/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
+                      <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/elpgreen/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                  </ul>
+                      </ul>
+                  </div>
+              </div> 
+          </div> 
+     </div>
+    </div>
+     <div class="row">
+        <div class="col-12">
+            <nav class="fables-single-nav">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="fables-single-item nav-link fables-forth-text-color fables-second-active fables-second-hover-color fables-forth-after px-3 px-md-5 font-15 semi-font border-0 active rounded-0 py-3" id="nav-desc-tab" data-toggle="tab" href="#nav-desc" role="tab" aria-controls="nav-desc" aria-selected="true">Introduction</a>
+            <a class="fables-single-item nav-link fables-forth-text-color fables-second-active fables-second-hover-color fables-forth-after border-0 px-3 px-md-5 font-15 semi-font rounded-0 py-3" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="false">System Configuration</a>
+            <a class="fables-single-item nav-link fables-forth-text-color fables-second-active fables-second-hover-color fables-forth-after border-0 px-3 px-md-5 font-15 semi-font rounded-0 py-3" id="nav-review-tab" data-toggle="tab" href="#nav-review" role="tab" aria-controls="nav-review" aria-selected="false">Technical Specification</a>
+          </div>
+        </nav>
+            <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-desc" role="tabpanel" aria-labelledby="nav-desc-tab">
+              <p class="fables-single-info mt-4 font-15 fables-fifth-text-color">
+                <p>This OTR tire disassembly machine is used to cut the tire bead or tire side off, or disassemble the tires in lateral direction (along the tire tread), which will make an easier work for crocodile tire sectional cutter machine, and tire shredders (to protect the cutting blades). <br>
+                 This machine can cut the tires up to the diameter of three (3) meters. </p>
+                     
+          </div>
+          <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
+              <p class="fables-single-info mt-4 font-15 fables-fifth-text-color"> 
+                <h1> Video demo Machine</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Qz6hFWa_c_0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                <img src="assets/custom/images/Scrapped Waste Tyre Recycling To Rubber Granulates Production/43.jpg">
+               
+
+          </div>
+          <div class="tab-pane fade" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
+              <p class="fables-single-info mt-4 font-15 fables-fifth-text-color">
+                <table>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Motor</th>
+                        <th>Number of Motors</th>
+                        <th>HP/KW Range</th>
+                        <th>Voltage</th>
+                        <th>Cutting Chamber L*W</th>
+                        <th>Equipment Dimensions L*W*H</th>
+                        <th>Equipment Weight</th>
+                        <th>Hopper Opening L*W*H</th>
+                        <th>Capacity</th>
+                        <th>Product Size Range</th>
+                    </tr>
+                    <tr>
+                        <td>TR2663</td>
+                        <td>Electric</td>
+                        <td>1</td>
+                        <td>315kw</td>
+                        <td>As per customer request</td>
+                        <td>697*1562</td>
+                        <td>6217*2168*3561</td>
+                        <td>24000kg</td>
+                        <td>1726*877*906</td>
+                        <td>3-6t/h</td>
+                        <td>25mm-12mm</td>
+                    </tr>
+                    <tr>
+                        <td>TR2643</td>
+                        <td>Electric</td>
+                        <td>1</td>
+                        <td>220kw</td>
+                        <td>As per customer request</td>
+                        <td>697*852</td>
+                        <td>5797*2168*3561</td>
+                        <td>23200kg</td>
+                        <td>1226*877*906</td>
+                        <td>2-3t/h</td>
+                        <td>25mm-12mm</td>
+                    </tr>
+                    <tr>
+                        <td>TR2147</td>
+                        <td>Electric</td>
+                        <td>1</td>
+                        <td>132kw</td>
+                        <td>As per customer request</td>
+                        <td>742*1200</td>
+                        <td>2010*2562*4110</td>
+                        <td>6100kg</td>
+                        <td>1412*902*1410</td>
+                        <td>1.5-3t/h</td>
+                        <td>25mm-12mm</td>
+                    </tr>
+                    <tr>
+                        <td>TR1740</td>
+                        <td>Electric</td>
+                        <td>1</td>
+                        <td>90kw</td>
+                        <td>As per customer request</td>
+                        <td>550*1000</td>
+                        <td>2095*2180*4105</td>
+                        <td>4200kg</td>
+                        <td>1182*700*1255</td>
+                        <td>1-1.5t/h</td>
+                        <td>25mm-12mm</td>
+                    </tr>
+                    <tr>
+                        <td>TR1732</td>
+                        <td>Electric</td>
+                        <td>1</td>
+                        <td>75kw</td>
+                        <td>As per customer request</td>
+                        <td>550*800</td>
+                        <td>1995*1980*4105</td>
+                        <td>3500kg</td>
+                        <td>982*700*1255</td>
+                        <td>700kg-1t/h</td>
+                        <td>25mm-12mm</td>
+                    </tr>
+                    <tr>
+                        <td>TR1332</td>
+                        <td>Electric</td>
+                        <td>1</td>
+                        <td>55kw</td>
+                        <td>As per customer request</td>
+                        <td>450*800</td>
+                        <td>1720*1730*2316</td>
+                        <td>1850kg</td>
+                        <td>922*580*916</td>
+                        <td>500kg-700kg/h</td>
+                        <td>25mm-12mm</td>
+                    </tr>
+                    <tr>
+                        <td>TR1324</td>
+                        <td>Electric</td>
+                        <td>1</td>
+                        <td>45kw</td>
+                        <td>As per customer request</td>
+                        <td>450*600</td>
+                        <td>1400*1200*2260</td>
+                        <td>1700kg</td>
+                        <td>722*580*916</td>
+                        <td>300kg-500kg/h</td>
+                        <td>25mm-12mm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-0 mb-md-5">
+<div class="col-12">
+<h2 class="fables-forth-text-color fables-light-background-color my-3 my-md-5 py-3 text-center font-20 semi-font">Related Products</h2>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 fables-product-block">
+<div class="card rounded-0 mb-4">
+<div class="row">
+<div class="fables-product-img col-12">
+<img class="card-img-top rounded-0" src="assets/custom/images/product1.jpg" alt="dress fashion">
+<div class="fables-img-overlay">                                          
+   <ul class="nav fables-product-btns">
+       <li><a href="Automatic Waste Tyre To Rubber Blocks Cutting Machine .html" class="fables-product-btn"><span class="fables-iconeye"></span></a></li>
+       <li><a href="Automatic Waste Tyre To Rubber Blocks Cutting Machine .html" class="fables-product-btn"><span class="fables-iconcompare"></span></a></li>
+       <li><button class="fables-product-btn"><span class="fables-iconheart"></span></button></li>
+   </ul>
+</div>
+</div>
+<div class="card-body col-12">
+<h5 class="card-title mx-3">
+ <a href="Automatic Waste Tyre To Rubber Blocks Cutting Machine .html" class="fables-main-text-color font-16 semi-font fables-second-hover-color">Model:TPS-ARBC2000</a>
+</h5>
+<p class="card-text fables-fifth-text-color font-15 mx-3">Automatic Waste Tyre To Rubber Blocks Cutting Machine </p>
+<p class="font-15 font-weight-bold fables-second-text-color my-2 mx-3">$ contact</p>
+<p class="fables-product-info"><a href="register.html" class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-14 p-2 px-4">
+<span class="fables-iconcart"></span> 
+<span class="fables-btn-value">ADD TO CART</span></a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 fables-product-block">
+<div class="card rounded-0 mb-4">
+<div class="row">
+<div class="fables-product-img col-12">
+<img class="card-img-top rounded-0" src="assets/custom/images/product2.jpg" alt="dress fashion">
+<div class="fables-img-overlay">                                          
+   <ul class="nav fables-product-btns">
+       <li><a href="High Efficiency Waste Tyre Slitting Machine .html" class="fables-product-btn"><span class="fables-iconeye"></span></a></li>
+       <li><a href="High Efficiency Waste Tyre Slitting Machine .html" class="fables-product-btn"><span class="fables-iconcompare"></span></a></li>
+       <li><button class="fables-product-btn"><span class="fables-iconheart"></span></button></li>
+   </ul>
+</div>
+</div>
+<div class="card-body col-12">
+<h5 class="card-title mx-3">
+ <a href="High Efficiency Waste Tyre Slitting Machine .html" class="fables-main-text-color font-16 semi-font fables-second-hover-color">Model:TPS-WTSM1200</a>
+</h5>
+<p class="card-text fables-fifth-text-color font-15 mx-3">High Efficiency Waste Tyre Slitting Machine</p>
+<p class="font-15 font-weight-bold fables-second-text-color my-2 mx-3">$ contact</p>
+<p class="fables-product-info"><a href="register.html" class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-14 p-2 px-4">
+<span class="fables-iconcart"></span> 
+<span class="fables-btn-value">ADD TO CART</span></a></p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-sm-6 col-lg-3 fables-product-block">
+<div class="card rounded-0 mb-4">
+<div class="row">
+<div class="fables-product-img col-12">
+<img class="card-img-top rounded-0" src="assets/custom/images/product3.jpg" alt="dress fashion">
+<div class="fables-img-overlay">                                          
+   <ul class="nav fables-product-btns">
+       <li><a href="High Efficient Debeader for Waste Tyre Recycling Plant .html" class="fables-product-btn"><span class="fables-iconeye"></span></a></li>
+       <li><a href="High Efficient Debeader for Waste Tyre Recycling Plant .html" class="fables-product-btn"><span class="fables-iconcompare"></span></a></li>
+       <li><button class="fables-product-btn"><span class="fables-iconheart"></span></button></li>
+   </ul>
+</div>
+</div>
+<div class="card-body col-12">
+<h5 class="card-title mx-3">
+ <a href="High Efficient Debeader for Waste Tyre Recycling Plant .html" class="fables-main-text-color font-16 semi-font fables-second-hover-color">Model:TPS-WBD</a>
+</h5>
+<p class="card-text fables-fifth-text-color font-15 mx-3">High Efficient Debeader for Waste Tyre Recycling Plant</p>
+<p class="font-15 font-weight-bold fables-second-text-color my-2 mx-3">$ contact</p>
+<p class="fables-product-info"><a href="register.html" class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-14 p-2 px-4">
+<span class="fables-iconcart"></span> 
+<span class="fables-btn-value">ADD TO CART</span></a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 fables-product-block">
+<div class="card rounded-0 mb-4">
+<div class="row">
+<div class="fables-product-img col-12">
+<img class="card-img-top rounded-0" src="assets/custom/images/product4.jpg" alt="dress fashion">
+<div class="fables-img-overlay">                                          
+   <ul class="nav fables-product-btns">
+       <li><a href="High Efficiency Fully Automatic Cracker Mill Plant for Waste Tyre Recycling Plant.html"><span class="fables-iconeye"></span></a></li>
+       <li><a href="High Efficiency Fully Automatic Cracker Mill Plant for Waste Tyre Recycling Plant.html" class="fables-product-btn"><span class="fables-iconcompare"></span></a></li>
+       <li><button class="fables-product-btn"><span class="fables-iconheart"></span></button></li>
+   </ul>
+</div>
+</div>
+<div class="card-body col-12">
+<h5 class="card-title mx-3">
+ <a href="High Efficiency Fully Automatic Cracker Mill Plant for Waste Tyre Recycling Plant.html" class="fables-main-text-color font-16 semi-font fables-second-hover-color">Model: A-FATR</a>
+</h5>
+<p class="card-text fables-fifth-text-color font-15 mx-3">Grator / Rasper for waste tire recycling production line</p>
+<p class="font-15 font-weight-bold fables-second-text-color my-2 mx-3">$ contact</p>
+<p class="fables-product-info"><a href="register.html" class="btn fables-second-border-color fables-second-text-color fables-btn-rouned fables-hover-btn-color font-14 p-2 px-4">
+<span class="fables-iconcart"></span> 
+<span class="fables-btn-value">ADD TO CART</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row my-3 my-lg-5">       
+<div class="owl-carousel owl-theme px-6 my-0" id="fables-partner-carousel">
+<div> 
+<img src="assets/custom/images/partner2-1.jpg" alt="Fables Template" class="fables-partner-carousel-img">  
+</div>
+<div> 
+<img src="assets/custom/images/partner2-2.jpg" alt="Fables Template" class="fables-partner-carousel-img">  
+</div>
+<div> 
+<img src="assets/custom/images/partner2-3.jpg" alt="Fables Template" class="fables-partner-carousel-img">  
+</div>
+<div> 
+<img src="assets/custom/images/partner2-4.jpg" alt="Fables Template" class="fables-partner-carousel-img">  
+</div>
+<div> 
+<img src="assets/custom/images/partner2-3.jpg" alt="Fables Template" class="fables-partner-carousel-img">  
+</div>
+<div> 
+<img src="assets/custom/images/partner2-1.jpg" alt="Fables Template" class="fables-partner-carousel-img">  
+</div>
+<div> 
+<img src="assets/custom/images/partner2-2.jpg" alt="Fables Template" class="fables-partner-carousel-img">  
+</div>
+<div> 
+<img src="assets/custom/images/partner2-3.jpg" alt="Fables Template" class="fables-partner-carousel-img">  
+</div>
+<div> 
+<img src="assets/custom/images/partner2-4.jpg" alt="Fables Template" class="fables-partner-carousel-img">  
+</div>
+<div> 
+<img src="assets/custom/images/partner2-5.jpg" alt="Fables Template" class="fables-partner-carousel-img">  
+</div>
+<div> 
+<img src="assets/custom/images/partner2-6.jpg" alt="Fables Template" class="fables-partner-carousel-img">  
+</div>
+<div> 
+<img src="assets/custom/images/partner2-7.jpg" alt="Fables Template" class="fables-partner-carousel-img">  
+</div>
+
+</div>
+</div>   
+</div>
+</div>   
+</div>  
+<!-- Start Footer 2 Background Image  -->
+<div class="fables-footer-image fables-after-overlay white-color py-4 py-lg-5 bg-rules" >
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 mt-2 mb-5 text-center" style="color: #f1f1f3;">
+                <h2 class="font-30 semi-font mb-5">Welcome to <strong style="color: #9fa0a1;">ELP Green Technology </strong>ELP Green Technology and <strong style="color: #9fa0a1;">Tops Recycling! </strong></h2>
+                
+                <form class="form-inline position-relative"> 
+                  <div class="form-group fables-subscribe-formgroup"> 
+                    <input type="email" class="form-control fables-subscribe-input fables-btn-rouned" placeholder="Your Email">
+                  </div>
+                  <button type="submit" class="btn fables-second-background-color fables-btn-rouned fables-subscribe-btn"><strong style="color: #f1f1f3;">Subscribe</strong></button>
+                </form>
+                
+            </div>
+            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                <a href="index.html" class="fables-second-border-color border-bottom pb-3 d-block mb-3 mt-minus-13"><img src="assets/custom/images/elp1.png" alt="fables template"></a>
+                <p class="font-15 fables-third-text-color"style="color: #fff">
+                    Our commitment goes beyond providing quality equipment. We are here to ensure that your journey with us is one of continuous success. From installation and training to technical support and warranty coverage, we are dedicated to providing the resources necessary to optimize the performance and longevity of your investment. With ELP Green Technology and Tops Recycling, you're not just acquiring machines, you're gaining a reliable partner committed to your ongoing success.
+                </p> 
+                
+            </div>
+             
+            <div class="col-12 col-sm-6 col-lg-4">
+                <h2 class="font-20 semi-font fables-second-border-color border-bottom pb-3"style="color: #fff">Contact us</h2>
+               <div class="my-3">
+                    <h4 class="font-16 semi-font"><span class="fables-iconmap-icon fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span> Address Information</h4>
+                    <p class="font-14 fables-fifth-text-color mt-2 ml-4"style="color: #fff"> Provincial, Cidade de Zhangjiagang, Província de Jiangsu, PR China </p>
+                </div>
+                <div class="my-3">
+                    <h4 class="font-16 semi-font"><span class="fables-iconphone fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span> Call Now </h4>
+                    <p class="font-14 fables-fifth-text-color mt-2 ml-4"style="color: #fff">(+39)350 1021359 /</p>
+                </div>
+                <div class="my-3">
+                    <h4 class="font-16 semi-font"><span class="fables-iconemail fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span> Mail </h4>
+                    <p class="font-14 fables-fifth-text-color mt-2 ml-4" style="color: #fff">euro@elpgreen.com</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <h2 class="font-20 semi-font fables-second-border-color border-bottom pb-3 mb-3" style="color: #fff;">EXPLORE OUR SITE</h2>
+                <ul class="nav fables-footer-links">
+                    <li><a href="about.html" style="color: #fff;">About Us</a></li>
+                    <li><a href="contactus1.html"style="color: #fff">Contact Us</a></li>
+                    <li><a href="APPLICATION.html"style="color: #fff">Application</a></li>
+                    <li><a href="produtos aba 2 .html"style="color: #fff">Full Automatic plant</a></li>
+                    <li><a href="produtos aba 1 .html"style="color: #fff">Semi-Automatic plant</a></li>
+                    <li><a href="Products & Services.html"style="color: #fff">Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright fables-main-background-color mt-0 border-0 white-color">
+        <ul class="nav fables-footer-social-links just-center fables-light-footer-links">
+            <a href="https://www.youtube.com/@elpgreen" class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
+                <span class="fab fa-pinterest-square"></span> <!-- Ícone de Usuário -->
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqvHRam4zJxtScPlKkeukIKUp1YZWFo-eKgDDjH7U1k_rSKQ/viewform?usp=sf_link" target="_blank" class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
+                <span class="fas fa-envelope"></span> <!-- Ícone de E-mail -->
+            </a>
+            <a href="https://www.linkedin.com/in/elpgreen/" target="_blank" class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
+                <span class="fab fa-linkedin"></span> <!-- Ícone do LinkedIn -->
+            </a>
+            <a href="https://wa.me/message/OQTHXVGTISTHD1" target="_blank" class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
+                <span class="fab fa-whatsapp"></span> <!-- Ícone de WhatsApp -->
+            </a>
+            
+        </ul>
+        <p class="mb-0">Copyright © 2023 ELP Green Technology. All rights reserved.</p> 
+
+</div>
+ <script>
+    function expandImage(image) {
+        // Create overlay element
+        var overlay = document.createElement("div");
+        overlay.className = "overlay";
+        overlay.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+        overlay.style.position = "fixed";
+        overlay.style.top = "0";
+        overlay.style.left = "0";
+        overlay.style.width = "100%";
+        overlay.style.height = "100%";
+        overlay.style.zIndex = "9999";
+        
+        // Create image element inside overlay
+        var img = document.createElement("img");
+        img.src = image.src;
+        img.alt = image.alt;
+        img.style.maxWidth = "100%";
+        img.style.maxHeight = "100%";
+        img.style.position = "absolute";
+        img.style.top = "50%";
+        img.style.left = "50%";
+        img.style.transform = "translate(-50%, -50%)";
+        
+        // Append image to overlay
+        overlay.appendChild(img);
+        
+        // Append overlay to body
+        document.body.appendChild(overlay);
+        
+        // Close overlay when clicked outside  the image
+        overlay.onclick = function() {
+            overlay.remove();
+        };
+    }
+</script>
+ 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Função para filtrar produtos por categoria
+        function filterProducts(category) {
+            const products = document.querySelectorAll('.fables-product-block');
+            products.forEach(product => {
+                if (category === 'all') {
+                    product.style.display = 'block'; // Mostrar todos os produtos se a categoria for 'all'
+                } else {
+                    if (product.classList.contains(category)) {
+                        product.style.display = 'block'; // Mostrar o produto se pertencer à categoria selecionada
+                    } else {
+                        product.style.display = 'none'; // Ocultar o produto se não pertencer à categoria selecionada
+                    }
+                }
+            });
+        }
+
+        // Event listener para cliques nas opções de categoria
+        const categorySelect = document.getElementById('categorySelector');
+        categorySelect.addEventListener('change', function() {
+            const category = this.value; // Obter a categoria selecionada
+            filterProducts(category); // Chamar a função de filtro de produtos
+        });
+
+        // Função para filtrar produtos por termo de pesquisa
+        function searchProducts(searchTerm) {
+            const products = document.querySelectorAll('.fables-product-block');
+            products.forEach(product => {
+                const title = product.querySelector('.card-title').textContent.toLowerCase();
+                if (title.includes(searchTerm.toLowerCase())) {
+                    product.style.display = 'block'; // Mostrar o produto se o título corresponder ao termo de pesquisa
+                } else {
+                    product.style.display = 'none'; // Ocultar o produto se o título não corresponder ao termo de pesquisa
+                }
+            });
+        }
+
+        // Event listener para input de pesquisa
+        const searchInput = document.querySelector('.fables-store-input');
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.trim(); // Obter o termo de pesquisa e remover espaços em branco extras
+            if (searchTerm !== '') {
+                searchProducts(searchTerm); // Chamar a função de pesquisa de produtos
+            } else {
+                filterProducts('all'); // Se o campo de pesquisa estiver vazio, mostrar todos os produtos
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var dropdownItems = document.querySelectorAll('.dropdown-item');
+        dropdownItems.forEach(function(item) {
+            item.addEventListener('open', function(e) {
+                e.preventDefault();
+                var parent = this.parentElement;
+                if (parent.classList.contains('open')) {
+                    parent.classList.remove('open');
+                } else {
+                    parent.classList.add('open');
+                }
+            });
+        });
+    });
+</script>
+<script>
+     $(".player").mb_YTPlayer();
+    
+</script>
+<script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+<script src="assets/vendor/timeline/jquery.timelify.js"></script>
+<script src="assets/vendor/loadscreen/js/ju-loading-screen.js"></script>
+<script src="assets/vendor/jquery-circle-progress/circle-progress.min.js"></script>
+<script src="assets/vendor/popper/popper.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap-4-navbar.js"></script>
+<script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script> 
+<script src="assets/vendor/fancybox-master/jquery.fancybox.min.js"></script>
+<script src="assets/vendor/video-background/jquery.mb.YTPlayer.js"></script>
+<script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
+<script src="assets/custom/js/custom.js"></script>  
+<script>
+     $(".player").mb_YTPlayer();
+    
+</script>
+<script src="assets/vendor/jQuery.countdown-master/jquery.countdown.min.js"></script>
+<script src="assets/custom/js/jquery-data-to.js"></script>   
+<script src="assets/vendor/jquery-circle-progress/circle.js"></script>
+<script src="assets/vendor/portfolio-filter-gallery/jquery.isotope.min.js"></script>
+<script src="assets/vendor/portfolio-filter-gallery/portfolio-filter-gallery.js"></script>
+
+<div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit(langCode) {
+            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: langCode, layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
