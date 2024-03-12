@@ -1,17 +1,19 @@
-# Inicializa um repositório Git
-git init
+# Site-ELP
 
-# Adiciona todos os arquivos da pasta ao repositório
+Este repositório contém o código fonte e o conteúdo do site ELP (ELPGREEN).
+
+## Estrutura de Pastas
+
+- **RecyclingPlants**: Contém o conteúdo principal do site.
+- **.github/workflows**: Configurações para o GitHub Actions para implantar o conteúdo estático no GitHub Pages.
+- **custom**: Arquivos personalizados.
+- **vendor**: Dependências ou bibliotecas de terceiros.
+
+## Instruções para Implantação
+
+1. **Inicialize o repositório Git:**
+   ```bash
 git add .
-
-# Realiza o primeiro commit com uma mensagem descritiva
 git commit -m "Adiciona o conteúdo do site na pasta RecyclingPlants"
-
-# Renomeia o branch para 'main'
 git branch -M main
-
-# Adiciona o repositório remoto do GitHub
-git remote add origin https://github.com/ELPGREEN/RecyclingPlants.git
-
-# Envia as alterações para o repositório remoto no branch principal
 git push -u origin main
