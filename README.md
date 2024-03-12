@@ -11,7 +11,7 @@ git commit -m "Primeiro commit"
 git branch -M main 
 
 # Adiciona o repositório remoto do GitHub
-git remote add origin https://github.com/ELPGREEN/site-ELP.git 
+git remote add origin https://github.com/ELPGREEN/site-ELP.git/index.htm
 
 # Envia as alterações para o repositório remoto no branch principal
 git push -u origin main
