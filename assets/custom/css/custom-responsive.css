@@ -214,10 +214,10 @@
     }
     @media (max-width:767px) {
     .btco-hover-menu .collapse ul ul, .btco-hover-menu .collapse ul ul.dropdown-menu {
-        background: #2c3e4f;
+        background: #e4e4e4a1;
     }
-    .btco-hover-menu a, .navbar > li > a { 
-        color: #fff; 
+    .btco-hover-menu a, .navbar > li > a {
+        color: #595858;
     }
     .icons-header-mobile{
         position: absolute;
