@@ -17,7 +17,7 @@
 .btco-hover-menu li a:hover,
 .btco-hover-menu li a:focus ,
 .navbar>.show>a,  .navbar>.show>a:focus,  .navbar>.show>a:hover{
-    color: #0b2063;
+    color: #426de5;
     background: transparent;
     outline: 0;
 }
@@ -37,14 +37,14 @@
     margin-top: 8px;
 }
 .fables-nav .nav-link {
-    color: rgb(3, 20, 66);
+    color: rgb(11, 25, 73);
     font-size: 15px;
     font-weight: 400;
     transition: all 0.3s ease-in-out;
     padding: 10px 15px !important;
 }
 .fables-nav .nav-link:hover {
-    color: rgb(9, 36, 124);
+    color: rgb(1, 81, 92);
 }
 /*submenu style start from here*/
 
@@ -53,7 +53,7 @@
     padding: 0px 0; 
     margin: 0 0 0; 
     border: 0px solid transition !important;
-    border: 0px solid rgba(0,0,0,.15);	
+    border: 0px solid rgba(247, 245, 245, 0.26);	
     border-radius: 0px;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -61,7 +61,7 @@
 }
 
 /*first level*/
-.btco-hover-menu .collapse ul > li:hover > a{background: transparent;color: rgb(11, 20, 100);}
+.btco-hover-menu .collapse ul > li:hover > a{background: transparent;color: rgb(23, 83, 151);}
  
 /*second level*/
 .btco-hover-menu .collapse ul ul ul > li:hover > a{background: #fff;}
@@ -120,7 +120,7 @@
     bottom: 100%;
     left: 24px;
     border-right: 5px solid transparent;
-    border-bottom: 5px solid rgba(44, 44, 44, 0.9);
+    border-bottom: 5px solid rgba(255,255,255,0.9);
     border-left: 5px solid transparent;
 }
 .fables-nav li li > .dropdown-menu:before {
