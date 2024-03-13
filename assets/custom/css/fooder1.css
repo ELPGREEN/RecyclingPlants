@@ -1,0 +1,218 @@
+
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.copyright {
+  background-color: #02041d; /* Azul escuro para o fundo */
+  color: #ffffff; /* Letras brancas */
+  font-family: 'Times New Roman', Times, serif; /* Fonte Times New Roman */
+  padding: 10px; /* Adicione um preenchimento para separar o texto do fundo */
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #fbfbfc;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed1{
+  background: #02041d; /* Azul escuro para o fundo */
+  box-shadow: 0 1px 1px 0 rgba(238, 238, 238, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px 'Times New Roman', Times, serif; /* Fonte Times New Roman */
+  padding: 55px 50px;
+}
+
+.footer-distributed1 .footer-left,
+.footer-distributed1 .footer-center,
+.footer-distributed1 .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed1 .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed1 h3{
+  color: #ffffff; /* Letras brancas */
+  font: normal 36px 'Times New Roman', Times, serif; /* Fonte Times New Roman */
+  margin: 0;
+}
+
+.footer-distributed1 h3 span{
+  color: rgb(191, 196, 195);
+}
+
+/* Footer links */
+
+.footer-distributed1 .footer-links{
+  color: #ffffff; /* Letras brancas */
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed1 .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed1 .footer-company-name{
+  color: #14264b;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed1 .footer-center{
+  width: 35%;
+}
+
+.footer-distributed1 .footer-center i{
+  background-color: #33383b;
+  color: #ffffff; /* Letras brancas */
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed1 .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed1 .footer-center p{
+  display: inline-block;
+  color: #ffffff; /* Letras brancas */
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed1 .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed1 .footer-center p a{
+  color: lightseagreen;
+  text-decoration: none;
+}
+
+.footer-distributed1 .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed1 .footer-links .link-1:before {
+  content: none;
+}
+.footer-company-about ul {
+    list-style-type: disc; /* Adiciona a bolinha antes de cada item */
+    color: #999; /* Define a cor do texto como cinza claro */
+}
+
+.footer-company-about a {
+    color: #999; /* Define a cor dos links como cinza claro */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+.footer-company-about a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre os links */
+}
+
+.footer-company-about ul li {
+    text-align: left; /* Alinha o texto dos itens da lista à esquerda */
+}
+/* Footer Right */
+
+.footer-distributed1 .footer-right{
+  width: 20%;
+}
+
+
+.footer-distributed1 .footer-company-about{
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed1 .footer-company-about span{
+  display: block;
+  color: #ffffff; /* Letras brancas */
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed1 .footer-icons{
+  margin-top: 25px;
+}
+
+.footer-distributed1 .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff; /* Letras brancas */
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+  .footer-distributed1{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed1 .footer-left,
+  .footer-distributed1 .footer-center,
+  .footer-distributed1 .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed1 .footer-center i{
+    margin-left: 0;
+  }
+}
