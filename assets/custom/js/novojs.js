@@ -1,26 +1,5 @@
-
-    // Adiciona classe 'active' ao botão do menu quando clicado
-    document.querySelector('.menu-btn').addEventListener('click', function() {
-        this.classList.toggle('active');
-    });
-
-    document.addEventListener("DOMContentLoaded", function() {
-        var dropdownItems = document.querySelectorAll('.dropdown-item');
-        dropdownItems.forEach(function(item) {
-            item.addEventListener('click', function(e) {
-                e.preventDefault();
-                var parent = this.parentElement;
-                if (parent.classList.contains('open')) {
-                    parent.classList.remove('open');
-                } else {
-                    parent.classList.add('open');
-                }
-            });
-        });
-    });
-
-  // Adiciona classe 'active' ao botão do menu quando clicado
-  document.querySelector('.menu-btn').addEventListener('click', function() {
+// Adiciona classe 'active' ao botão do menu quando clicado
+document.querySelector('.menu-btn').addEventListener('click', function() {
     this.classList.toggle('active');
 });
 
@@ -69,89 +48,67 @@ function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 }
 
-    $(".player").mb_YTPlayer();
+// $(".player").mb_YTPlayer();  // Removido porque parece ser uma chamada a um plugin externo
 
-    function expandImage(image) {
-        // Create overlay element
-        var overlay = document.createElement("div");
-        overlay.className = "overlay";
-        overlay.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
-        overlay.style.position = "fixed";
-        overlay.style.top = "0";
-        overlay.style.left = "0";
-        overlay.style.width = "100%";
-        overlay.style.height = "100%";
-        overlay.style.zIndex = "9999";
-        
-        // Create image element inside overlay
-        var img = document.createElement("img");
-        img.src = image.src;
-        img.alt = image.alt;
-        img.style.maxWidth = "100%";
-        img.style.maxHeight = "100%";
-        img.style.position = "absolute";
-        img.style.top = "50%";
-        img.style.left = "50%";
-        img.style.transform = "translate(-50%, -50%)";
-        
-        // Append image to overlay
-        overlay.appendChild(img);
-        
-        // Append overlay to body
-        document.body.appendChild(overlay);
-        
-        // Close overlay when clicked outside the image
-        overlay.onclick = function() {
-            overlay.remove();
-        };
-    }
+function expandImage(image) {
+    // Create overlay element
+    var overlay = document.createElement("div");
+    overlay.className = "overlay";
+    overlay.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100%";
+    overlay.style.height = "100%";
+    overlay.style.zIndex = "9999";
+    
+    // Create image element inside overlay
+    var img = document.createElement("img");
+    img.src = image.src;
+    img.alt = image.alt;
+    img.style.maxWidth = "100%";
+    img.style.maxHeight = "100%";
+    img.style.position = "absolute";
+    img.style.top = "50%";
+    img.style.left = "50%";
+    img.style.transform = "translate(-50%, -50%)";
+    
+    // Append image to overlay
+    overlay.appendChild(img);
+    
+    // Append overlay to body
+    document.body.appendChild(overlay);
+    
+    // Close overlay when clicked outside the image
+    overlay.onclick = function() {
+        overlay.remove();
+    };
+}
 
-    document.addEventListener("DOMContentLoaded", function() {
-        // Função para filtrar produtos por categoria
-        function filterProducts(category) {
-            const products = document.querySelectorAll('.fables-product-block');
-            products.forEach(product => {
-                if (category === 'all') {
-                    product.style.display = 'block'; // Mostrar todos os produtos se a categoria for 'all'
-                } else {
-                    if (product.classList.contains(category)) {
-                        product.style.display = 'block'; // Mostrar o produto se pertencer à categoria selecionada
-                    } else {
-                        product.style.display = 'none'; // Ocultar o produto se não pertencer à categoria selecionada
-                    }
-                }
-            });
-        }
 
-        // Event listener para cliques nas opções de categoria
-        const categorySelect = document.getElementById('categorySelector');
-        categorySelect.addEventListener('change', function() {
-            const category = this.value; // Obter a categoria selecionada
-            filterProducts(category); // Chamar a função de filtro de produtos
-        });
+  
 
-        // Função para filtrar produtos por termo de pesquisa
-        function searchProducts(searchTerm) {
-            const products = document.querySelectorAll('.fables-product-block');
-            products.forEach(product => {
-                const title = product.querySelector('.card-title').textContent.toLowerCase();
-                if (title.includes(searchTerm.toLowerCase())) {
-                    product.style.display = 'block'; // Mostrar o produto se o título corresponder ao termo de pesquisa
-                } else {
-                    product.style.display = 'none'; // Ocultar o produto se o título não corresponder ao termo de pesquisa
-                }
-            });
-        }
-
-        // Event listener para input de pesquisa
-        const searchInput = document.querySelector('.fables-store-input');
-        searchInput.addEventListener('input', function() {
-            const searchTerm = this.value.trim(); // Obter o termo de pesquisa e remover espaços em branco extras
-            if (searchTerm !== '') {
-                searchProducts(searchTerm); // Chamar a função de pesquisa de produtos
+    // Função para filtrar produtos por termo de pesquisa
+    function searchProducts(searchTerm) {
+        const products = document.querySelectorAll('.fables-product-block');
+        products.forEach(product => {
+            const title = product.querySelector('.card-title').textContent.toLowerCase();
+            if (title.includes(searchTerm.toLowerCase())) {
+                product.style.display = 'block'; // Mostrar o produto se o título corresponder ao termo de pesquisa
             } else {
-                filterProducts('all'); // Se o campo de pesquisa estiver vazio, mostrar todos os produtos
+                product.style.display = 'none'; // Ocultar o produto se o título não corresponder ao termo de pesquisa
             }
         });
-    });
+    }
 
+    // Event listener para input de pesquisa
+    const searchInput = document.querySelector('.fables-store-input');
+    searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.trim(); // Obter o termo de pesquisa e remover espaços em branco extras
+        if (searchTerm !== '') {
+            searchProducts(searchTerm); // Chamar a função de pesquisa de produtos
+        } else {
+            filterProducts('all'); // Se o campo de pesquisa estiver vazio, mostrar todos os produtos
+        }
+    });
+});

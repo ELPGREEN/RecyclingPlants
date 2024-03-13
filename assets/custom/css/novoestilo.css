@@ -165,3 +165,11 @@
 .navbar-toggler.menu-btn span {
     background-color: #fff; /* Branco */
 }
+.btn {
+    margin-top: 15px;
+}
+
+.card-body {
+    text-align: justify;
+    margin-top: 15px;
+}
