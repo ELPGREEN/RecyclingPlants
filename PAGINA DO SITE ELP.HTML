@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Gallery</title>
+    <style>
+        /* Estilos do corpo */
+        body {
+            font-family: 'PT Sans', Arial, sans-serif;
+            font-size: 12px;
+            color: #014235;
+            letter-spacing: 0;
+            line-height: 1.4em;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* Cor de fundo do corpo */
+        }
+
+        .video-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .video {
+            width: calc(25% - 20px);
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .video {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .video {
+                width: 100%;
+            }
+        }
+
+        .video-info {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="video-gallery">
+        <!-- Videos -->
+        <div class="video">
+            <iframe id="video1" width="100%" height="auto" src="https://www.youtube.com/embed/wbawDswO_JU" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo1" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video2" width="100%" height="auto" src="https://www.youtube.com/embed/sNKMcwW4KVg" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo2" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video3" width="100%" height="auto" src="https://www.youtube.com/embed/utfFAALNxFo" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo3" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video4" width="100%" height="auto" src="https://www.youtube.com/embed/lMlgAS6QHis" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo4" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video5" width="100%" height="auto" src="https://www.youtube.com/embed/JqFor1MPhAg" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo5" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video6" width="100%" height="auto" src="https://www.youtube.com/embed/-2GW8fDmpBM" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo6" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video7" width="100%" height="auto" src="https://www.youtube.com/embed/GpdNTBMIjbw" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo7" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video8" width="100%" height="auto" src="https://www.youtube.com/embed/LNJPvOCrYMw" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo8" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video9" width="100%" height="auto" src="https://www.youtube.com/embed/Jml2L6ywp4s" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo9" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video10" width="100%" height="auto" src="https://www.youtube.com/embed/biXx9ufXe5c" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo10" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video11" width="100%" height="auto" src="https://www.youtube.com/embed/nsTeE4S0wdo" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo11" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video12" width="100%" height="auto" src="https://www.youtube.com/embed/yabtzUH5Oig" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo12" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video13" width="100%" height="auto" src="https://www.youtube.com/embed/aHX0e8v6PQs" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo13" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video14" width="100%" height="auto" src="https://www.youtube.com/embed/xKMvmLCKSqA" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo14" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video15" width="100%" height="auto" src="https://www.youtube.com/embed/qDjKQJlhOgU" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo15" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video16" width="100%" height="auto" src="https://www.youtube.com/embed/gWDubQb1m2w" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo16" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video17" width="100%" height="auto" src="https://www.youtube.com/embed/a5K4M-zGfFQ" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo17" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video18" width="100%" height="auto" src="https://www.youtube.com/embed/ZcsQuWRSte0" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo18" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video19" width="100%" height="auto" src="https://www.youtube.com/embed/9xN-YUEW_VM" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo19" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video20" width="100%" height="auto" src="https://www.youtube.com/embed/kHLIQ9PyPKI" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo20" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video21" width="100%" height="auto" src="https://www.youtube.com/embed/4mU6cSteE9A" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo21" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video22" width="100%" height="auto" src="https://www.youtube.com/embed/CQOnIYj0Gb4" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo22" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video23" width="100%" height="auto" src="https://www.youtube.com/embed/zLt0KvkZhNQ" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo23" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video24" width="100%" height="auto" src="https://www.youtube.com/embed/SzBLmVduQ68" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo24" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video25" width="100%" height="auto" src="https://www.youtube.com/embed/jlDZQLEv8fA" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo25" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video26" width="100%" height="auto" src="https://www.youtube.com/embed/gRk_jR2TqX4" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo26" class="video-info"></div>
+        </div>
+        <div class="video">
+            <iframe id="video27" width="100%" height="auto" src="https://www.youtube.com/embed/gj933Nwd9nA" frameborder="0" allowfullscreen></iframe>
+            <div id="videoInfo27" class="video-info"></div>
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            var videos = document.querySelectorAll('.video');
+            var index = 0;
+
+            function showVideoInfo(videoFrame, infoElement) {
+                var videoId = videoFrame.src.split('/')[4].split('?')[0];
+                var apiKey = 'AIzaSyBR94XAODMMytL3c0jt7_F4uxvHyd2A30Y '; 
+                var apiUrl = 'https://www.googleapis.com/youtube/v3/videos?id=' + videoId + '&key=' + apiKey + '&part=snippet';
+                
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        var videoTitle = data.items[0].snippet.title;
+                        var videoDescription = data.items[0].snippet.description;
+                        
+                        // Exibir o título e a descrição do vídeo
+                        infoElement.innerHTML = '<strong>' + videoTitle + '</strong><br>' + videoDescription.substring(0, 150) + '...';
+                    })
+                    .catch(error => console.error('Erro ao buscar informações do vídeo:', error));
+            }
+
+            function showNextVideo() {
+                var video = videos[index];
+                var videoFrame = video.querySelector('iframe');
+                var videoInfo = video.querySelector('.video-info');
+
+                showVideoInfo(videoFrame, videoInfo);
+
+                index++;
+                if (index < videos.length) {
+                    setTimeout(showNextVideo, 500); // Ajuste o tempo de exibição do próximo vídeo aqui (em milissegundos)
+                }
+            }
+
+            showNextVideo();
+        };
+    </script>
+</body>
+</html>
