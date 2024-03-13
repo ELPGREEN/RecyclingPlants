@@ -155,4 +155,13 @@
     .navbar-toggler {
         background-color: #050130; /* Cinza escuro */
     }
-</style>
+
+.navbar-toggler.menu-btn {
+    background-color: #030316; /* Azul escuro forte */
+    border-color: #00041b; /* Mesma cor do fundo */
+}
+
+/* Estilo das listras dos três riscos */
+.navbar-toggler.menu-btn span {
+    background-color: #fff; /* Branco */
+}
