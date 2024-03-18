@@ -48,8 +48,6 @@ function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 }
 
-// $(".player").mb_YTPlayer();  // Removido porque parece ser uma chamada a um plugin externo
-
 function expandImage(image) {
     // Create overlay element
     var overlay = document.createElement("div");
@@ -85,30 +83,63 @@ function expandImage(image) {
     };
 }
 
-
-  
-
-    // Função para filtrar produtos por termo de pesquisa
-    function searchProducts(searchTerm) {
-        const products = document.querySelectorAll('.fables-product-block');
-        products.forEach(product => {
-            const title = product.querySelector('.card-title').textContent.toLowerCase();
-            if (title.includes(searchTerm.toLowerCase())) {
-                product.style.display = 'block'; // Mostrar o produto se o título corresponder ao termo de pesquisa
-            } else {
-                product.style.display = 'none'; // Ocultar o produto se o título não corresponder ao termo de pesquisa
-            }
-        });
-    }
-
-    // Event listener para input de pesquisa
-    const searchInput = document.querySelector('.fables-store-input');
-    searchInput.addEventListener('input', function() {
-        const searchTerm = this.value.trim(); // Obter o termo de pesquisa e remover espaços em branco extras
-        if (searchTerm !== '') {
-            searchProducts(searchTerm); // Chamar a função de pesquisa de produtos
+// Função para filtrar produtos por termo de pesquisa
+function searchProducts(searchTerm) {
+    const products = document.querySelectorAll('.fables-product-block');
+    products.forEach(product => {
+        const title = product.querySelector('.card-title').textContent.toLowerCase();
+        if (title.includes(searchTerm.toLowerCase())) {
+            product.style.display = 'block'; // Mostrar o produto se o título corresponder ao termo de pesquisa
         } else {
-            filterProducts('all'); // Se o campo de pesquisa estiver vazio, mostrar todos os produtos
+            product.style.display = 'none'; // Ocultar o produto se o título não corresponder ao termo de pesquisa
         }
     });
+}
+
+// Event listener para input de pesquisa
+const searchInput = document.querySelector('.fables-store-input');
+searchInput.addEventListener('input', function() {
+    const searchTerm = this.value.trim(); // Obter o termo de pesquisa e remover espaços em branco extras
+    if (searchTerm !== '') {
+        searchProducts(searchTerm); // Chamar a função de pesquisa de produtos
+    } else {
+        filterProducts('all'); // Se o campo de pesquisa estiver vazio, mostrar todos os produtos
+    }
 });
+
+window.onload = function() {
+    var videos = document.querySelectorAll('.video');
+    var index = 0;
+
+    function showVideoInfo(videoFrame, infoElement) {
+        var videoId = videoFrame.src.split('/')[4].split('?')[0];
+        var apiKey = 'YOUR_API_KEY_HERE'; // Insira sua chave de API do YouTube aqui
+        var apiUrl = 'https://www.googleapis.com/youtube/v3/videos?id=' + videoId + '&key=' + apiKey + '&part=snippet';
+        
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                var videoTitle = data.items[0].snippet.title;
+                var videoDescription = data.items[0].snippet.description;
+                
+                // Exibir o título e a descrição do vídeo
+                infoElement.innerHTML = '<strong>' + videoTitle + '</strong><br>' + videoDescription.substring(0, 150) + '...';
+            })
+            .catch(error => console.error('Erro ao buscar informações do vídeo:', error));
+    }
+
+    function showNextVideo() {
+        var video = videos[index];
+        var videoFrame = video.querySelector('iframe');
+        var videoInfo = video.querySelector('.video-info');
+
+        showVideoInfo(videoFrame, videoInfo);
+
+        index++;
+        if (index < videos.length) {
+            setTimeout(showNextVideo, 500); // Ajuste o tempo de exibição do próximo vídeo aqui (em milissegundos)
+        }
+    }
+
+    showNextVideo();
+};
