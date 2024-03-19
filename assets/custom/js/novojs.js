@@ -15,6 +15,11 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 parent.classList.add('open');
             }
+            // Abrir o link em uma nova página
+            var link = this.getAttribute('href');
+            if (link) {
+                window.open(link, '_blank');
+            }
         });
     });
 });
