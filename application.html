@@ -46,7 +46,14 @@
   <!-- Inclua o script do Bootstrap JavaScript -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <script>
+    $(document).ready(function(){
+        // Adicione esta função para rolar a página para o topo sempre que uma aba é selecionada novamente
+        $('.nav-link').on('shown.bs.tab', function (e) {
+            window.scrollTo(0, 0);
+        });
+    });
+</script>
 <!--GOOGLE FONTS-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
@@ -286,10 +293,10 @@
         <div class="col-12">
             <nav class="fables-single-nav">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="fables-single-item nav-link fables-forth-text-color fables-second-active fables-second-hover-color fables-forth-after px-3 px-md-5 font-15 semi-font border-0 active rounded-0 py-3" id="nav-desc-tab" data-toggle="tab" href="#nav-desc" role="tab" aria-controls="nav-desc" aria-selected="true">TDF / TDA</a>
-                    <a class="fables-single-item nav-link fables-forth-text-color fables-second-active fables-second-hover-color fables-forth-after border-0 px-3 px-md-5 font-15 semi-font rounded-0 py-3" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="false">Rubber Crumb </a>
-                    <a class="fables-single-item nav-link fables-forth-text-color fables-second-active fables-second-hover-color fables-forth-after border-0 px-3 px-md-5 font-15 semi-font rounded-0 py-3" id="nav-review-tab" data-toggle="tab" href="#nav-review" role="tab" aria-controls="nav-review" aria-selected="false">Rubber Powder</a>
-                    <a class="fables-single-item nav-link fables-forth-text-color fables-second-active fables-second-hover-color fables-forth-after border-0 px-3 px-md-5 font-15 semi-font rounded-0 py-3" id="nav-spec-tab" data-toggle="tab" href="#nav-spec" role="tab" aria-controls="nav-spec" aria-selected="false">Granulated Rubber (TDF / TDA)</a>
+                    <a class="fables-single-item nav-link fables-forth-text-color fables-second-hover-color fables-forth-after px-3 px-md-5 font-15 semi-font border-0 active rounded-0 py-3" id="nav-desc-tab" data-toggle="tab" href="#nav-desc" role="tab" aria-controls="nav-desc" aria-selected="true">TDF / TDA</a>
+                    <a class="fables-single-item nav-link fables-forth-text-color fables-second-hover-color fables-forth-after border-0 px-3 px-md-5 font-15 semi-font rounded-0 py-3" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="false">Rubber Crumb</a>
+                    <a class="fables-single-item nav-link fables-forth-text-color fables-second-hover-color fables-forth-after border-0 px-3 px-md-5 font-15 semi-font rounded-0 py-3" id="nav-review-tab" data-toggle="tab" href="#nav-review" role="tab" aria-controls="nav-review" aria-selected="false">Rubber Powder</a>
+                    <a class="fables-single-item nav-link fables-forth-text-color fables-second-hover-color fables-forth-after border-0 px-3 px-md-5 font-15 semi-font rounded-0 py-3" id="nav-spec-tab" data-toggle="tab" href="#nav-spec" role="tab" aria-controls="nav-spec" aria-selected="false">Granulated Rubber</a>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
@@ -324,8 +331,7 @@
                 </div>
                 <div class="tab-pane fade" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
                     <p class="fables-single-info mt-4 font-15 fables-fifth-text-color">
-                        <h1 class="fables-single-info mt-4 font-15 fables-fifth-text-color">Rubber Powder </h1>
-                        <strong>Application in Construction and Traffic:</strong>
+                        Application in Construction and Traffic:
                         Rubber powder, a fine granular material obtained from recycled tires, finds application in construction and traffic-related projects. It is used in various construction materials, such as rubberized asphalt and concrete, to enhance durability and reduce road noise. Additionally, it is utilized in traffic safety products like road markings and speed bumps.
                     </p>
                     <div class="gallery">
@@ -353,7 +359,6 @@
                 </div>
                 <div class="tab-pane fade" id="nav-spec" role="tabpanel" aria-labelledby="nav-spec-tab">
                     <p class="fables-single-info mt-4 font-15 fables-fifth-text-color">
-                        <h1 class="fables-single-info mt-4 font-15 fables-fifth-text-color">Granulated Rubber (TDF / TDA)</h1>
                         Shredded tire-derived fuels (TDF) and high-density (TDA) are often used in energy recovery and civil engineering projects. They can be burned as alternative fuel in industrial furnaces for energy generation or incorporated into civil engineering projects such as landscaping, playgrounds, and race tracks, as well as in construction and urban traffic.
                     </p>
                     <div class="gallery">
